@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "Personal.Domain/lib/dms-share-kernel.jar"
+    ]
+}
