@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>EliminarTripulanteHandler.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Application</a> &gt; <a href="index.source.html" class="el_package">UsesCases.Command.Tripulante.Eliminar</a> &gt; <span class="el_source">EliminarTripulanteHandler.java</span></div><h1>EliminarTripulanteHandler.java</h1><pre class="source lang-java linenums">package UsesCases.Command.Tripulante.Eliminar;
+
+import Factories.ITripulanteFactory;
+import Model.Tripulante.Tripulante;
+import Repositories.ITripulanteRepository;
+import Repositories.IUnitOfWork;
+import fourteam.http.HttpStatus;
+import fourteam.http.Exception.HttpException;
+import fourteam.mediator.RequestHandler;
+
+public class EliminarTripulanteHandler implements RequestHandler&lt;EliminarTripulanteCommand, Tripulante&gt; {
+
+    private ITripulanteFactory _tripulanteFactory;
+    private ITripulanteRepository _tripulanteRepository;
+    private IUnitOfWork _unitOfWork;
+
+    public EliminarTripulanteHandler(ITripulanteFactory aeronaveFactory, ITripulanteRepository aeronaveRepository,
+<span class="nc" id="L18">            IUnitOfWork _unitOfWork) {</span>
+<span class="nc" id="L19">        this._tripulanteFactory = aeronaveFactory;</span>
+<span class="nc" id="L20">        this._tripulanteRepository = aeronaveRepository;</span>
+<span class="nc" id="L21">        this._unitOfWork = _unitOfWork;</span>
+<span class="nc" id="L22">    }</span>
+
+    @Override
+    public Tripulante handle(EliminarTripulanteCommand request) throws HttpException {
+<span class="nc" id="L26">        Tripulante tripulante = _tripulanteRepository.FindByKey(request.tripulante.Key);</span>
+<span class="nc bnc" id="L27" title="All 2 branches missed.">        if (tripulante == null) {</span>
+<span class="nc" id="L28">            throw new HttpException(HttpStatus.BAD_REQUEST, &quot;Tripulante no encontrado&quot;);</span>
+        }
+        
+<span class="nc" id="L31">        return _tripulanteRepository.Delete(tripulante);</span>
+
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

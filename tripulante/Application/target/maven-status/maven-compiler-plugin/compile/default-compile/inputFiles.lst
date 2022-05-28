@@ -1,0 +1,16 @@
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Application\src\main\java\UsesCases\Command\Tripulante\Eliminar\EliminarTripulanteHandler.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Application\src\main\java\UsesCases\Queries\Tripulante\GetAll\GetAllTripulanteQuery.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Application\src\main\java\Services\ITripulanteService.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Application\src\main\java\UsesCases\Command\Tripulante\Crear\CrearTripulanteCommand.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Application\src\main\java\UsesCases\Command\Tripulante\Editar\EditarTripulanteCommand.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Application\src\main\java\UsesCases\Command\Tripulante\Eliminar\EliminarTripulanteCommand.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Application\src\main\java\UsesCases\Queries\Tripulante\GetAll\GetAllTripulanteHandler.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Application\src\main\java\Dto\Cargo\CargoDto.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Application\src\main\java\UsesCases\Command\Tripulante\Crear\CrearTripulanteHandler.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Application\src\main\java\Dto\Tripulante\TripulanteDto.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Application\src\main\java\Application.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Application\src\main\java\UsesCases\Command\Cargo\UpdateCargoWhenTripulanteCreado\UpdateCargoWhenTripulanteCreado.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Application\src\main\java\Services\TripulanteService.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Application\src\main\java\UsesCases\Queries\Tripulante\GetByKey\GetTripulanteByKeyHandler.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Application\src\main\java\UsesCases\Queries\Tripulante\GetByKey\GetTripulanteByKeyQuery.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Application\src\main\java\UsesCases\Command\Tripulante\Editar\EditarTripulanteHandler.java

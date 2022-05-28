@@ -1,0 +1,15 @@
+Model\Tripulante\ValueObjects\HorasVuelo.class
+Factories\TripulanteFactory.class
+Model\Tripulante\Tierra.class
+Factories\TripulanteFactory$Tipo.class
+Repositories\IUnitOfWork.class
+Factories\ITripulanteFactory.class
+Repositories\ICargoRepository.class
+Model\Tripulante\Tripulante.class
+Model\Tripulante\ValueObjects\EmailAddress.class
+Domain.class
+Model\Tripulante\Cargo.class
+Repositories\ITripulanteRepository.class
+Model\Tripulante\Aire.class
+Event\PersonalRegistrado.class
+Model\Tripulante\ValueObjects\NroMillas.class

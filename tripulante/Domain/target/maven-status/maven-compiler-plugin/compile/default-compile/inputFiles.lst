@@ -1,0 +1,14 @@
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Domain\src\main\java\Model\Tripulante\Tierra.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Domain\src\main\java\Factories\ITripulanteFactory.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Domain\src\main\java\Model\Tripulante\ValueObjects\HorasVuelo.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Domain\src\main\java\Domain.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Domain\src\main\java\Model\Tripulante\Aire.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Domain\src\main\java\Repositories\ITripulanteRepository.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Domain\src\main\java\Event\PersonalRegistrado.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Domain\src\main\java\Model\Tripulante\Tripulante.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Domain\src\main\java\Repositories\ICargoRepository.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Domain\src\main\java\Factories\TripulanteFactory.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Domain\src\main\java\Model\Tripulante\ValueObjects\EmailAddress.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Domain\src\main\java\Model\Tripulante\ValueObjects\NroMillas.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Domain\src\main\java\Model\Tripulante\Cargo.java
+C:\Users\Liceth Flores\Documents\GitHub\testing-aero\tripulante\Domain\src\main\java\Repositories\IUnitOfWork.java
