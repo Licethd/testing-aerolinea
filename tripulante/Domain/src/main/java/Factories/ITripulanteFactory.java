@@ -7,5 +7,5 @@ import Model.Tripulante.Cargo;
 public interface ITripulanteFactory {
   
     
-    public Tripulante Create(String nombre, String apellido, String emailAddress, String cargo);
+    public Tripulante Create(String nombre, String apellido, String emailAddress, Cargo cargo);
 }

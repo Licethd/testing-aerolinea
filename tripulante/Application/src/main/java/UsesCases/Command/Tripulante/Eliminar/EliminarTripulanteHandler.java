@@ -14,10 +14,10 @@ public class EliminarTripulanteHandler implements RequestHandler<EliminarTripula
     private ITripulanteRepository _tripulanteRepository;
     private IUnitOfWork _unitOfWork;
 
-    public EliminarTripulanteHandler(ITripulanteFactory aeronaveFactory, ITripulanteRepository aeronaveRepository,
+    public EliminarTripulanteHandler(ITripulanteFactory tripulanteFactory, ITripulanteRepository tripulanteRepository,
             IUnitOfWork _unitOfWork) {
-        this._tripulanteFactory = aeronaveFactory;
-        this._tripulanteRepository = aeronaveRepository;
+        this._tripulanteFactory = tripulanteFactory;
+        this._tripulanteRepository = tripulanteRepository;
         this._unitOfWork = _unitOfWork;
     }
 

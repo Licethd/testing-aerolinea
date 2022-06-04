@@ -21,7 +21,7 @@ public class WriteDbContext extends IWriteDbContext {
     private MongoClient client;
     private MongoDatabase db;
 
-    private final String DB_NAME = "dmsnur_tripulanteTesting";
+    private final String DB_NAME = "dmsnur_tripulante";
     private final String DB_USER = "root";
     private final String DB_PASS = "rootpassword";
     private final String DB_HOST = "servisofts.com";

@@ -1,0 +1,7 @@
+Event\PersonalRegistrado_Test.class
+Model\Tripulante\Cargo_Test.class
+Factories\TripulanteFactory_Test.class
+Model\Tripulante\Tierra_Test.class
+Domain_Test.class
+Model\Tripulante\Tripulante_Test.class
+Model\Tripulante\Aire_Test.class

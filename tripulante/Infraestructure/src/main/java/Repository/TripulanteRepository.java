@@ -18,7 +18,7 @@ public class TripulanteRepository implements ITripulanteRepository {
 
     @Override
     public Tripulante FindByKey(UUID key) {
-        return _tripulantes.Single(obj -> obj.key.equals(key));
+        return _tripulantes.Single(obj -> obj.key.toString().equals(key.toString()));
     }
 
     @Override

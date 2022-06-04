@@ -4,6 +4,7 @@ import Factories.ITripulanteFactory;
 import Model.Tripulante.Tripulante;
 import Repositories.ITripulanteRepository;
 import Repositories.IUnitOfWork;
+import fourteam.http.HttpStatus;
 import fourteam.http.Exception.HttpException;
 import fourteam.mediator.RequestHandler;
 
@@ -23,12 +24,19 @@ public class EditarTripulanteHandler implements RequestHandler<EditarTripulanteC
     @Override
     public Tripulante handle(EditarTripulanteCommand request) throws HttpException {
 
-        Tripulante tripulante = _tripulanteFactory.Create(request.tripulanteDto.getNombre(),
-                request.tripulanteDto.getApellido(), request.tripulanteDto.getEmailAddress(),
-                request.tripulanteDto.getCargo());
-        // tripulante.eventCreado();
+        // Tripulante tripulante = _tripulanteFactory.Create(request.tripulanteDto.getNombre(),
+        //         request.tripulanteDto.getApellido(), request.tripulanteDto.getEmailAddress(),
+        //         request.tripulanteDto.getCargo());
+        Tripulante tripulante = _tripulanteRepository.FindByKey(request.tripulanteDto.Key);
+        if(tripulante == null){
+            throw new HttpException(HttpStatus.BAD_REQUEST, "Tripulante no encontrado");
+        }
+        tripulante.setNombre(request.tripulanteDto.Nombre);
+        tripulante.setApellido(request.tripulanteDto.Apellido);
+        tripulante.setEmailAddress(request.tripulanteDto.EmailAddress);
+        tripulante.setCargo(request.tripulanteDto.Cargo);
         _tripulanteRepository.Update(tripulante);
-        _unitOfWork.commit();
+        // _unitOfWork.commit();
         return tripulante;
     }
 

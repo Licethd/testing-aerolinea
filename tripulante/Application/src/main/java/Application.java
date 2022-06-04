@@ -1,4 +1,4 @@
-import UsesCases.Command.Cargo.UpdateCargoWhenTripulanteCreado.UpdateCargoWhenTripulanteCreado;
+// import UsesCases.Command.Cargo.UpdateCargoWhenTripulanteCreado.UpdateCargoWhenTripulanteCreado;
 import UsesCases.Command.Tripulante.Crear.CrearTripulanteHandler;
 import UsesCases.Command.Tripulante.Editar.EditarTripulanteHandler;
 import UsesCases.Command.Tripulante.Eliminar.EliminarTripulanteHandler;

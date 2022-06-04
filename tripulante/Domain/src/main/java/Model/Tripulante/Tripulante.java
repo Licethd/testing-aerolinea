@@ -1,21 +1,22 @@
 package Model.Tripulante;
 
-import core.AggregateRoot;
-import core.BussinessRuleValidateExeption;
-import core.DomainEvent;
 // import java.util.ArrayList;
 // import java.util.Date;
 import java.util.UUID;
-import com.google.gson.Gson;
+
+// import com.google.gson.Gson;
 import Event.PersonalRegistrado;
-import Model.Tripulante.ValueObjects.EmailAddress;
+// import Model.Tripulante.ValueObjects.EmailAddress;
+import core.AggregateRoot;
+import core.DomainEvent;
 
 public class Tripulante extends AggregateRoot<UUID> {
     private String Nombre;
     private String Apellido;
-    private EmailAddress EmailAddress;
+    //private EmailAddress EmailAddress;
+    private String EmailAddress;
 
-    String Cargo;
+    Cargo Cargo;
     private Tierra cargo_tierra;
     private Aire cargo_aire;
 
@@ -23,11 +24,18 @@ public class Tripulante extends AggregateRoot<UUID> {
 
     // }
 
-    public Tripulante(String nombre, String apellido, String emailAddress, String cargo) {
+    public Tripulante() {
+        
+
+    };
+
+
+    public Tripulante(String nombre, String apellido, String emailAddress, Cargo cargo) {
         key = UUID.randomUUID();
         this.Nombre = nombre;
         this.Apellido = apellido;
-        this.EmailAddress = new EmailAddress(emailAddress);
+        //this.EmailAddress = new EmailAddress(emailAddress);
+        this.EmailAddress = emailAddress;
         this.Cargo = cargo;
         // try {
         // this.Nombre = nombre;
@@ -60,40 +68,31 @@ public class Tripulante extends AggregateRoot<UUID> {
     public void setApellido(String apellido) {
         this.Apellido = apellido;
     }
-    // public String getEmailAddress() {
-    // return EmailAddress;
-    // }
-    // public void setEmailAddress(String emailAddress) {
-    // this.EmailAddress = emailAddress;
-    // }
+    public String getEmailAddress() {
+    return EmailAddress;
+    }
+    public void setEmailAddress(String emailAddress) {
+    this.EmailAddress = emailAddress;
+    }
 
-    public String getCargo() {
+    public Cargo getCargo() {
         return Cargo;
     }
 
-    public void setCargo(String cargo) {
+    public void setCargo(Cargo cargo) {
         this.Cargo = cargo;
     }
 
-    public void registrar(Cargo tripulante) {
+ 
 
-        // listaPersonal.add(tripulante); //ERROR
-        // System.out.println("\n[PERSONAL]: " + tripulante.getNombre() + " - " +
-        // tripulante.getApellido());
-        // System.out.println("\n[CARGO]: " + tripulante.toString() );
+   // public void ConsolidarPersonal() {
+   //     DomainEvent evento = new PersonalRegistrado(key, Nombre);
+  //      addDomainEvent(evento);
+ //   }
 
-        // addDomainEvent(new PersonalRegistrado(key, Nombre));
-
-    }
-
-    public void ConsolidarPersonal() {
-        DomainEvent evento = new PersonalRegistrado(key, Nombre);
-        addDomainEvent(evento);
-    }
-
-    @Override
-    public String toString() {
-        return new Gson().toJson(this, Tripulante.class);
-    }
+    // @Override
+    // public String toString() {
+    //     return new Gson().toJson(this, Tripulante.class);
+    // }
 
 }

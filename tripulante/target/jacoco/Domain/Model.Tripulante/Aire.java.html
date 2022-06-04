@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Aire.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Domain</a> &gt; <a href="index.source.html" class="el_package">Model.Tripulante</a> &gt; <span class="el_source">Aire.java</span></div><h1>Aire.java</h1><pre class="source lang-java linenums">package Model.Tripulante;
+
+
+
+import Model.Tripulante.ValueObjects.HorasVuelo;
+import Model.Tripulante.ValueObjects.NroMillas;
+
+public class Aire extends Cargo {
+
+    private HorasVuelo Horas_vuelo;
+    private NroMillas Nro_millas;
+
+<span class="fc" id="L13">    public Aire( Double Horas_vuelo, Double Nro_millas) {</span>
+     //super(sueldo, descripcion)
+         
+<span class="fc" id="L16">        this.Horas_vuelo = new HorasVuelo(Horas_vuelo);</span>
+<span class="fc" id="L17">        this.Nro_millas = new NroMillas(Nro_millas);</span>
+<span class="fc" id="L18">    }</span>
+
+    public HorasVuelo getHorasVuelo() {
+<span class="fc" id="L21">        return Horas_vuelo;</span>
+    }
+
+    public NroMillas getNroMillas() {
+<span class="fc" id="L25">        return Nro_millas;</span>
+    }
+
+    public void setHorasVuelo(HorasVuelo horas_vuelo) {
+<span class="fc" id="L29">        this.Horas_vuelo = horas_vuelo;</span>
+<span class="fc" id="L30">    }</span>
+    public void setNroMillas(NroMillas nro_millas) {
+<span class="fc" id="L32">        this.Nro_millas = nro_millas;</span>
+<span class="fc" id="L33">    }</span>
+
+
+
+
+
+    // @Override
+    // public String toString() {
+    //     return new Gson().toJson(this);
+    // }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

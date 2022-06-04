@@ -1,5 +1,8 @@
 package Dto;
 
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyString;
+
 import java.util.UUID;
 
 import org.junit.Assert;
@@ -17,8 +20,10 @@ public class TripulanteDto_Test {
         String nombre = "Juanito";
         String apellido = "Morales";
         String emailAddress = "juanito@gmail.com";
-        String cargo = "Asistente";
-        TripulanteDto tripulante = new TripulanteDto();
+        Cargo cargo = new Cargo( 2500.0, "asistente");
+        // TripulanteDto tripulante = new TripulanteDto();
+        // TripulanteDto tripulante = new TripulanteDto(any(UUID.class), anyString(),  anyString(),  anyString(), any(Cargo.class));
+        TripulanteDto tripulante = new TripulanteDto(null,null, null, null, null);
 
         Assert.assertEquals(null, tripulante.Key);
         Assert.assertNull(tripulante.Nombre);
@@ -38,11 +43,11 @@ public class TripulanteDto_Test {
         // tripulante.Cargo = cargo;
 
         //falta el dar los valores de ejemplo
-        Assert.assertEquals(key, tripulante.Key);
-        Assert.assertEquals(nombre, tripulante.Nombre);
-        Assert.assertEquals(apellido, tripulante.Apellido);
-        Assert.assertEquals(emailAddress, tripulante.EmailAddress);
-        Assert.assertEquals(cargo, tripulante.Cargo);
+        Assert.assertEquals(key, tripulante.getKey());
+        Assert.assertEquals(nombre, tripulante.getNombre());
+        Assert.assertEquals(apellido, tripulante.getApellido());
+        Assert.assertEquals(emailAddress, tripulante.getEmailAddress());
+        Assert.assertEquals(cargo, tripulante.getCargo());
 
     }
 

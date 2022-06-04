@@ -10,12 +10,12 @@ public class TripulanteDto {
     public String Nombre;
     public String Apellido;
     public String EmailAddress;
-    public String Cargo;
+    public Cargo Cargo;
 
     public TripulanteDto() {
     }
 
-    public TripulanteDto(UUID key,String nombre, String apellido, String emailAddress, String cargo) {
+    public TripulanteDto(UUID key,String nombre, String apellido, String emailAddress, Cargo cargo) {
         Key = key;
         Nombre = nombre;
         Apellido = apellido;
@@ -56,11 +56,11 @@ public class TripulanteDto {
         EmailAddress = emailAddress;
     }
 
-    public String getCargo() {
+    public Cargo getCargo() {
         return Cargo;
     }
 
-    public void setCargo(String cargo) {
+    public void setCargo(Cargo cargo) {
         Cargo = cargo;
     }
 

@@ -2,7 +2,6 @@ package Model.Tripulante;
 
 import java.util.UUID;
 
-import com.google.gson.Gson;
 
 import core.Entity;
 
@@ -48,8 +47,5 @@ public class Cargo extends Entity<UUID> {
     // public String toString() {
     // return "Cargo{" + "descripcion=" + descripcion + ", sueldo=" + sueldo + '}';
     // }
-    @Override
-    public String toString() {
-        return new Gson().toJson(this);
-    }
+
 }

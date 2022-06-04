@@ -13,13 +13,14 @@ public class CargoDto_Test {
     public void CargoCheckPropertiesValid() {
 
         String descripcion = "Asistente";
-        CargoDto cargo = new CargoDto();
+        CargoDto cargo2 = new CargoDto();
+        CargoDto cargo = new CargoDto(null);
 
         Assert.assertNull(cargo.Descripcion);
 
         cargo.setDescripcion(descripcion);
 
-        Assert.assertEquals(descripcion, cargo.Descripcion);
+        Assert.assertEquals(descripcion, cargo.getDescripcion());
      
     }
 

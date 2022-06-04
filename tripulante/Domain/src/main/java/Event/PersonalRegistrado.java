@@ -6,12 +6,12 @@ import java.util.UUID;
 
 public class PersonalRegistrado extends DomainEvent {
    
-    public UUID KeyAeronave;
+    public UUID KeyTripulante;
     public String Nombre;
 
     public PersonalRegistrado(UUID key, String nombre) {
         super(LocalDateTime.now());
-       KeyAeronave = key;
+        KeyTripulante = key;
         Nombre = nombre;
     }
     public String getNombre() {

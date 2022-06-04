@@ -1,0 +1,10 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Domain,default,Domain,0,5,0,0,0,3,0,2,0,2
+Domain,Model.Tripulante,Cargo,0,26,0,0,0,12,0,6,0,6
+Domain,Model.Tripulante,Aire,0,29,0,0,0,10,0,5,0,5
+Domain,Model.Tripulante,Tripulante,0,60,0,0,0,23,0,11,0,11
+Domain,Model.Tripulante,Tierra,0,13,0,0,0,6,0,3,0,3
+Domain,Model.Tripulante.ValueObjects,NroMillas,0,9,0,0,0,4,0,1,0,1
+Domain,Model.Tripulante.ValueObjects,HorasVuelo,0,9,0,0,0,4,0,1,0,1
+Domain,Event,PersonalRegistrado,0,17,0,0,0,7,0,3,0,3
+Domain,Factories,TripulanteFactory,0,11,0,0,0,3,0,2,0,2

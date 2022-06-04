@@ -1,7 +1,6 @@
 package Model.Tripulante;
 
 
-import com.google.gson.Gson;
 
 import Model.Tripulante.ValueObjects.HorasVuelo;
 import Model.Tripulante.ValueObjects.NroMillas;
@@ -18,9 +17,28 @@ public class Aire extends Cargo {
         this.Nro_millas = new NroMillas(Nro_millas);
     }
 
-    @Override
-    public String toString() {
-        return new Gson().toJson(this);
+    public HorasVuelo getHorasVuelo() {
+        return Horas_vuelo;
     }
+
+    public NroMillas getNroMillas() {
+        return Nro_millas;
+    }
+
+    public void setHorasVuelo(HorasVuelo horas_vuelo) {
+        this.Horas_vuelo = horas_vuelo;
+    }
+    public void setNroMillas(NroMillas nro_millas) {
+        this.Nro_millas = nro_millas;
+    }
+
+
+
+
+
+    // @Override
+    // public String toString() {
+    //     return new Gson().toJson(this);
+    // }
 
 }

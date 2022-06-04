@@ -2,15 +2,12 @@ UsesCases\Command\Tripulante\Eliminar\EliminarTripulanteHandler.class
 UsesCases\Queries\Tripulante\GetByKey\GetTripulanteByKeyQuery.class
 Dto\Cargo\CargoDto.class
 Dto\Tripulante\TripulanteDto.class
-Services\TripulanteService.class
 UsesCases\Command\Tripulante\Eliminar\EliminarTripulanteCommand.class
 UsesCases\Queries\Tripulante\GetByKey\GetTripulanteByKeyHandler.class
 UsesCases\Command\Tripulante\Crear\CrearTripulanteCommand.class
 UsesCases\Queries\Tripulante\GetAll\GetAllTripulanteQuery.class
 UsesCases\Command\Tripulante\Editar\EditarTripulanteHandler.class
-Services\ITripulanteService.class
 Application.class
-UsesCases\Command\Cargo\UpdateCargoWhenTripulanteCreado\UpdateCargoWhenTripulanteCreado.class
 UsesCases\Command\Tripulante\Crear\CrearTripulanteHandler.class
 UsesCases\Command\Tripulante\Editar\EditarTripulanteCommand.class
 UsesCases\Queries\Tripulante\GetAll\GetAllTripulanteHandler.class

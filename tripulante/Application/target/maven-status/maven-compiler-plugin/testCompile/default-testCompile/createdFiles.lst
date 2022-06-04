@@ -1,3 +1,7 @@
+Application_Test.class
 Dto\TripulanteDto_Test.class
-UseCases\Command\CrearTripulanteHandler_Test.class
+UseCases\Command\EditarTripulanteHandler_Test.class
 Dto\CargoDto_Test.class
+UseCases\Command\GetTripulanteByKeyHandler_Test.class
+UseCases\Command\GetAllTripulanteHandler_Test.class
+UseCases\Command\CrearTripulanteHandler_Test.class

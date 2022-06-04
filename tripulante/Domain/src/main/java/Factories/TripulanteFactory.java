@@ -5,16 +5,16 @@ import Model.Tripulante.Tripulante;
 
 public class TripulanteFactory implements ITripulanteFactory {
 
-   public enum Tipo{
-        Aire,
-        Tierra
-    }
+//    public enum Tipo{
+//         Aire,
+//         Tierra
+//     }
     public TripulanteFactory(){
         
     }
 
     @Override
-    public Tripulante Create(String nombre, String apellido, String emailAddress, String cargo) {
+    public Tripulante Create(String nombre, String apellido, String emailAddress, Cargo cargo) {
         
         // switch (nombre) {
         //     case Tipo.Aire:

@@ -1,6 +1,6 @@
 package Model.Tripulante;
 
-import com.google.gson.Gson;
+// import com.google.gson.Gson;
 
 public class Tierra extends Cargo {
     
@@ -12,10 +12,19 @@ public class Tierra extends Cargo {
         this.Descripcion_c = descripcion_c;
     }
 
-
-    @Override
-    public String toString() {
-        return new Gson().toJson(this);
+    public String getDescripcion_c() {
+        return Descripcion_c;
     }
+
+    public void setDescripcion_c(String descripcion_c) {
+        this.Descripcion_c = descripcion_c;
+    }
+
+
+
+    // @Override
+    // public String toString() {
+    //     return new Gson().toJson(this);
+    // }
 
 }

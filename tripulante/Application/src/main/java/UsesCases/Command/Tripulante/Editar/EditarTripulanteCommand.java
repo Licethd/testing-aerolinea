@@ -14,4 +14,8 @@ public class EditarTripulanteCommand implements Request<TripulanteDto> {
         this.tripulanteDto.setKey(key);
     }
 
+    // public EditarTripulanteCommand(TripulanteDto _tripulanteDto) {
+    //     this.tripulanteDto = _tripulanteDto;
+    // }
+
 }

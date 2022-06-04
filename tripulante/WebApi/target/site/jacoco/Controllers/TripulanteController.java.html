@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TripulanteController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">WebApi</a> &gt; <a href="index.source.html" class="el_package">Controllers</a> &gt; <span class="el_source">TripulanteController.java</span></div><h1>TripulanteController.java</h1><pre class="source lang-java linenums">package Controllers;
+
+import java.util.List;
+
+import Dto.Tripulante.TripulanteDto;
+import UsesCases.Command.Tripulante.Crear.CrearTripulanteCommand;
+import UsesCases.Command.Tripulante.Editar.EditarTripulanteCommand;
+import UsesCases.Command.Tripulante.Eliminar.EliminarTripulanteCommand;
+import UsesCases.Queries.Tripulante.GetAll.GetAllTripulanteQuery;
+import UsesCases.Queries.Tripulante.GetByKey.GetTripulanteByKeyQuery;
+import Model.Tripulante.*;
+import fourteam.http.Exception.HttpException;
+import fourteam.http.annotation.*;
+import fourteam.mediator.Mediator;
+import fourteam.mediator.Response;
+
+@RestController
+@RequestMapping(&quot;/tripulante&quot;)
+public class TripulanteController {
+
+    private Mediator _mediator;
+
+<span class="fc" id="L23">    public TripulanteController(Mediator mediator) {</span>
+<span class="fc" id="L24">        this._mediator = mediator;</span>
+<span class="fc" id="L25">    }</span>
+
+
+
+    @GetMapping(&quot;/&quot;)
+    public Response&lt;List&lt;Tripulante&gt;&gt; getAll() throws HttpException {
+<span class="nc" id="L31">        return _mediator.send(new GetAllTripulanteQuery());</span>
+    }
+
+    @GetMapping(&quot;/{key}&quot;)
+    public Response&lt;TripulanteDto&gt; getByKey(@PathVariable GetTripulanteByKeyQuery request) throws HttpException {
+<span class="nc" id="L36">        return _mediator.send(request);</span>
+    }
+
+
+    @PostMapping(&quot;/registro&quot;)
+    public Response&lt;Tripulante&gt; register(@RequestBody CrearTripulanteCommand tripulante) throws HttpException {
+
+
+<span class="nc" id="L44">       return _mediator.send(tripulante);</span>
+    }
+
+    @PutMapping(&quot;/{key}&quot;)
+    public Response&lt;Tripulante&gt; edit(@RequestBody TripulanteDto tripulante, @PathVariable EditarTripulanteCommand request) throws HttpException {
+<span class="nc" id="L49">        request.tripulanteDto.Nombre = tripulante.getNombre();</span>
+<span class="nc" id="L50">        return _mediator.send(request);</span>
+    }
+
+    @DeleteMapping(&quot;/{key}&quot;)
+    public Response&lt;Tripulante&gt; delete(@PathVariable EliminarTripulanteCommand request) throws HttpException {
+<span class="nc" id="L55">        return _mediator.send(request);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
